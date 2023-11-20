@@ -17,12 +17,11 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       feels_like: response.data.main.feels_like,
       city: response.data.name,
-      iconUrl: response.data.weather[0].icon,
+      icon: response.data.weather[0].icon,
     });
   }
 
   function search() {
-    // city
     const apiKey = "9a5dc8766b040bccf4c4d1f2659e8c62";
 
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -31,7 +30,7 @@ export default function Weather(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    search(city);
+    search();
   }
 
   function handleCityChange(event) {

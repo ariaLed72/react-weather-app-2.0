@@ -25,11 +25,8 @@
   list-style: none;
 }
 
-.weather img {
-  height: 64px;
-  float: left;
-  margin-right: 10px;
-  width: 64px;
+.weather canvas {
+  margin: 10px auto;
 }
 
 .weather .temperature {
