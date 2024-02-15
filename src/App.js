@@ -15,7 +15,7 @@ function App() {
           >
             Ariana Ledezma
           </a>{" "}
-          is{" "}
+          and is{" "}
           <a
             href="https://github.com/ariaLed72/react-weather-app-2.0"
             target="_blank"
