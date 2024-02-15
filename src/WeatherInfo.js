@@ -21,14 +21,14 @@ export default function WeatherInfo(props) {
             <span className="temperature">
               {Math.round(props.data.temperature)}
             </span>
-            <span className="unit">°C</span>
+            <span className="unit">°F</span>
           </div>
         </div>
         <div className="col-6">
           <ul>
-            <li>Feels Like: {Math.round(props.data.feels_like)}°C</li>
+            <li>Feels Like: {Math.round(props.data.feels_like)}°F</li>
             <li>Humidity: {Math.round(props.data.humidity)}%</li>
-            <li>Wind Speed: {Math.round(props.data.wind)} km/h</li>
+            <li>Wind Speed: {Math.round(props.data.wind)} mph</li>
           </ul>
         </div>
       </div>
